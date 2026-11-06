@@ -24,11 +24,11 @@ Reklam yok, deneme süresi yok, ağ bağlantısı yok. Derlenmiş uygulama yakla
 Hazır bir sürüm yayınlanmıyor, kaynaktan derlenir. Gereksinimler: Apple Silicon Mac, macOS 13 veya üstü, Xcode Komut Satırı Araçları.
 
 ```bash
-git clone https://github.com/IbrahimTalha0/rarac.git
+git clone https://github.com/IbrahimTalha0/open_rar_for_macos.git
 ```
 
 ```bash
-cd rarac && ./build.sh
+cd open_rar_for_macos && ./build.sh
 ```
 
 Uygulama `build/RarAc.app` konumunda oluşur. İstersen Uygulamalar klasörüne taşı. Derleme betiği uygulamayı ücretsiz yerel imzayla (ad-hoc) imzalar, Apple geliştirici hesabı gerekmez.
@@ -79,4 +79,6 @@ Testler RAR4, RAR5, şifre, çok parça, bozuk arşiv, klasör dışına yazma d
 
 ## Lisans ve teşekkür
 
-RAR açma işi [RARLAB](https://www.rarlab.com/rar_add.htm)'ın UnRAR kaynak koduyla yapılır. Kod Alexander Roshal'a aittir ve [vendor/unrar/license.txt](vendor/unrar/license.txt) koşullarıyla dağıtılır. Bu lisans, kodun RAR sıkıştırma algoritmasını yeniden oluşturmak için kullanılmasına izin vermez.
+`vendor/unrar` dışındaki kod [MIT lisansıyla](LICENSE) sunulur: Telif bildirimini koruduğun sürece kullanabilir, değiştirebilir, dağıtabilir ve satabilirsin.
+
+RAR açma işi [RARLAB](https://www.rarlab.com/rar_add.htm)'ın UnRAR kaynak koduyla yapılır. `vendor/unrar` MIT kapsamında değildir. Kod Alexander Roshal'a aittir ve [vendor/unrar/license.txt](vendor/unrar/license.txt) koşullarıyla dağıtılır. Bu lisans, kodun RAR sıkıştırma algoritmasını yeniden oluşturmak için kullanılmasına izin vermez.
